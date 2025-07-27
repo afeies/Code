@@ -32,7 +32,7 @@ class RandomNumberHandler(BaseHTTPRequestHandler):
             self.send_header('Content-type', 'text/plain')
             self.end_headers()
             
-            # Write JSON response
+            # Write text response
             self.wfile.write(f'{random_number}'.encode())
 
         else:
