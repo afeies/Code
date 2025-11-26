@@ -4,7 +4,8 @@
     "type": "module",
   
     "scripts": {
-      "step1": "ts-node src/callbacks/mainCallbacks.ts"
+      "step1": "ts-node src/callbacks/mainCallbacks.ts",
+      "step2": "ts-node src/promises/mainPromises.ts"
     },
   
     "dependencies": {},
