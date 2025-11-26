@@ -1,0 +1,16 @@
+# OS junk
+.DS_Store
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# TypeScript output
+dist/
+build/
+out/
+
+# Env files
+.env
+.env.*
