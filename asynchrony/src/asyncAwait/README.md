@@ -10,6 +10,13 @@
 - promises are the modern standard for defining asychronous APIs
 - async/await is just syntactic sugar on top of promises
 
+### Promise.all
+- runs multiple async tasks at the same time
+- returns a promise that resolves when all tasks finish
+- result is an array of their resolved values
+- if any task fails, the whole thing rejects
+- best for parallel async operations, not sequential ones
+
 ### Notes
 - async/await is syntax sugar on top of promises
 - when you write `await getWeather()`, JS automatically waits for the promis to resolve and returns its value, without needing .then()
