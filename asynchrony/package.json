@@ -5,7 +5,8 @@
   
     "scripts": {
       "step1": "ts-node src/callbacks/mainCallbacks.ts",
-      "step2": "ts-node src/promises/mainPromises.ts"
+      "step2": "ts-node src/promises/mainPromises.ts",
+      "step3": "ts-node src/asyncAwait/mainAsync.ts"
     },
   
     "dependencies": {},
