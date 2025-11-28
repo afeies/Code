@@ -31,3 +31,48 @@ I am learning bash, so I made a mini project, a project manager. Here are my not
 ## Run the script
 - ./filename
     - run a file in the current directory
+
+# Add timestamp logging
+- date
+    - default format: Fri Nov 28 01:15:41 EST 2025
+- date +"%Y-%m-%d %H:%M:%S"
+    - custom format
+- $(...)
+    - command substitution: runs a command inside another command and returns its output
+- '>'
+    - overwrite file
+- '>>'
+    - append to file (add at the end)
+
+# Add Commands
+- new
+- list
+- delete
+
+## Add script arguments
+- $1: the first argument after the script name
+- $2: the second argument
+    - allow the script to behave differently based on user input
+
+## Add conditional logic
+`if [...]; then
+    # commands
+fi`
+- exit 0
+    - stops the script from running further
+        - 0 means success
+        - non-zero values indicate error
+- cat ...
+    - concatenate: prints contents of file in terminal
+
+## Add "list" command
+- ls -d */
+    - list only directories (trailing / means show only folders)
+- grep -v "logs"
+    - grep: filter text
+    - -v: invert match (remove lines containing ...)
+
+## Add "delete" command
+- rm -r ...
+    - rm: remove file
+    - -r: recursive, required to delete folders
