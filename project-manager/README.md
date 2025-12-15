@@ -76,3 +76,35 @@ fi`
 - rm -r ...
     - rm: remove file
     - -r: recursive, required to delete folders
+
+## Additional notes
+- machine: Mac laptop
+    - the hardware + environment you're working on
+- OS: macOS
+    - the software that runs that harware
+- kernel: XNU
+    - the core of that OS
+- shell: Bash
+    - the interface you use to talk to the OS
+
+- Bash is a shell
+    - a shell is a program that lets you talk to os
+    - works naturally on Unix-like OSes
+    - PowerShell for Windows
+- Unix is an OS
+    - mostly historial but shapes every major OS we see today
+    - everything is a file: disks, terminals, processes, etc.
+- Unix-like OSes follow Unix design
+    - Linux distributions, macOS are Unix-like
+    - Windows is not Unix-like
+- os, kernel
+    - masOS, XNU kernel
+    - iOS, XNU kernel
+    - Windows, NT kernel
+    - Linux distributions (Ubuntu, Fedora, Arch), Linux kernel
+- vim: terminal text editor
+    - runs inside terminal on top of Bash
+- some commands are built into the shell
+    - cd, echo, export, etc.
+- other commands are external programs
+    - vim, ls, git, python3, node, gcc, docker, etc.
