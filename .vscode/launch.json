@@ -1,0 +1,31 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch (CodeLLDB)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/asm/hello",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "stopOnEntry": true,
+      "initCommands": [
+        "settings set target.x86-disassembly-flavor att",
+        "settings set stop-disassembly-display never"
+      ]
+    },
+    {
+      "name": "Launch x86_64 via arch (Rosetta)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "/usr/bin/arch",
+      "args": ["-x86_64", "${workspaceFolder}/hello"],
+      "cwd": "${workspaceFolder}",
+      "stopOnEntry": true,
+      "initCommands": [
+        "settings set target.x86-disassembly-flavor att",
+        "settings set stop-disassembly-display never"
+      ]
+    }
+  ]
+}
